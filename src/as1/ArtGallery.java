@@ -23,6 +23,10 @@ public class ArtGallery {
     }
 
 
+    public String toString() {
+        return "ArtGallery: " + name + ", Location: " + location + ", Number of Artworks: " + artworks.size();
+    }
+
     public void infoAboutArtGallery(){
         System.out.println("Name: " + name);
         System.out.println("Location: " + location);
@@ -38,6 +42,9 @@ public class ArtGallery {
     }
 
 
+    public void sortArtworksByPrice() {
+        artworks.sort((a1, a2) -> Double.compare(a1.getPrice(), a2.getPrice()));
+    }
 
 
 }

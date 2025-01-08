@@ -61,6 +61,9 @@ public class Main {
             }
         }
 
+        works.sortArtworksByPrice();
+        System.out.println("Artworks sorted by price:");
+        works.listOfArtworksOfArtGallery();
 
 
     }

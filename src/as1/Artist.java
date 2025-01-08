@@ -15,11 +15,11 @@ public class Artist {
 
     /// Getter and Setter
     public String getName(){ return name; }
-    public void setName() { name = name; }
+    public void setName() { this.name = name; }
     public int getBirthYear(){ return birthYear; }
-    public void setBirthYear() { birthYear = birthYear; }
+    public void setBirthYear() { this.birthYear = birthYear; }
     public String getNationality(){ return nationality; }
-    public void setNationality() { nationality = nationality; }
+    public void setNationality() { this.nationality = nationality; }
 
 
     public void infoAboutArtist(){
@@ -28,5 +28,9 @@ public class Artist {
         System.out.println("Nationality: " + nationality);
     }
 
+
+    public String toString() {
+        return "Artist: " + name + ", Year of Birth: " + birthYear + ", Nationality: " + nationality;
+    }
 
 }

@@ -21,13 +21,16 @@ public class Artwork {
     public String getTittle(){ return tittle; }
     public void setTittle() { this.tittle = tittle; }
     public int getAge(){ return age; }
-    public void setAge() { age = age; }
+    public void setAge() { this.age = age; }
     public double getPrice(){ return price; }
-    public void setPrice() { price = price; }
+    public void setPrice() { this.price = price; }
     public Artist getArtist(){ return artist; }
-    public void setArtist() { artist = artist; }
+    public void setArtist() { this.artist = artist; }
 
 
+    public String toString() {
+        return "Artwork: " + tittle + ", Age: " + age + ", Price: $" + price + ", Artist: " + artist.getName();
+    }
 
     public void infoAboutArtwork(){
         System.out.println("Tittle: " + tittle);
