@@ -171,7 +171,7 @@ public class DatabaseManager {
     }
     // ArtGallery delete
     public static void deleteArtGallery(int artgallery_id) {
-        String sql = "DELETE FROM Artist WHERE artist_id = ?";
+        String sql = "DELETE FROM ArtGallery WHERE artgallery_id = ?";
         try(Connection conn = connect();
             PreparedStatement pst = conn.prepareStatement(sql)) {
             pst.setInt(1, artgallery_id);
@@ -183,7 +183,7 @@ public class DatabaseManager {
     }
     // Artwork delete
     public static void deleteArtwork(int artwork_id) {
-        String sql = "DELETE FROM Artist WHERE artist_id = ?";
+        String sql = "DELETE FROM Artwork WHERE artwork_id = ?";
         try(Connection conn = connect();
             PreparedStatement pst = conn.prepareStatement(sql)) {
             pst.setInt(1, artwork_id);
